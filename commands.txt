@@ -1,0 +1,17 @@
+#list of possible user commands
+
+A 'priority' - ‘A’ input means that a new process has been created with a priority level of 'priority'. For example, the input A 2 means that a new process has arrived and has the priority level of 2. When a new process arrives, your program should allocate memory for it’s first page and determine whether to send it to the ready-queue or allow it to access the CPU. When choosing a PID for the new process start from 1 and go up. Do NOT reuse PIDs of the terminated processes.
+
+t - The process that currently uses the CPU terminates. It leaves the system immediately. Make sure you release the memory used by this process.
+
+d number file_name - The process that currently uses the CPU requests access to the hard disk #number. It wants to read or write file file_name.
+
+D number - The hard disk #number has finished the work for one process.
+
+m address - The process that currently uses the CPU requests a memory operation for the address 'address'.
+
+S r - Shows what process is currently using the CPU and what processes are waiting in the ready-queue.
+
+S i - Shows what processes are currently using the hard disks and what processes are waiting to use them. For each busy hard disk show the process that uses it and show its I/O-queue. Make sure to display the filenames for each process.
+
+S m - Shows the state of memory. For each used frame display the process number that occupies it and the page number stored in it.
